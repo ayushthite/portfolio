@@ -1,12 +1,13 @@
 import { ExternalLink } from "lucide-react";
-
+import img1 from "../assets/Projects/img1.png";
+import img3 from "../assets/Projects/img3.png";
 
 const projects = [
     {
         id: 1,
         title: "Y24 – Trap Camera Website",
         description: "Built a responsive website for showcasing wildlife trap cameras using HTML, CSS, JavaScript, and Bootstrap. It is a website for a wildlife conservation organization that showcases the work they do.",
-        image: "img1.png",
+        image: img1,
         tags: ["React", "TailwindCSS", "Javascript", "bootstrap", "jquery"],
         demoUrl: "https://y24.co.in/",
     },
@@ -14,7 +15,7 @@ const projects = [
         id: 2,
         title: "React Portfolio website",
         description: "A portfolio website built using React and TailwindCSS. It is a simple and clean portfolio website that showcases my projects and skills.",
-        image: "img3.png",
+        image: img3,
         tags: ["React", "TailwindCSS", "Jquery", "Emailjs", "lucide-react"],
         demoUrl: "https://ayush-thite.vercel.app/",
     },
@@ -43,7 +44,7 @@ export const ProjectSection = () => {
                             >
                                 <div className="h-48 overflow-hidden">
                                     <img
-                                        src={`../../public/Projects/${project.image}`}
+                                        src={project.image}
                                         alt={project.title}
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                         loading="lazy"
